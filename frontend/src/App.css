@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Jersey+10+Charted&display=swap");
+
+.jersey {
+  font-family: "Jersey 10 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 25px;
+}
+
+.anta {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+button {
+  width: 150px;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /* width: 1000px;
+  height: 600px; */
+}
+.container :hover {
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #00cf46;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  /* margin-right: 10px; */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 20px;
+  display: block;
+  border-radius: 8px;
+}
+
+.picture-panel {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  gap: 10px;
+  max-width: 1000px;
+  overflow-x: scroll;
+  background-color: #e1f1e7;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px hsla(37, 17%, 85%, 0.3);
+}
+
+.sub-pannel {
+  padding: 10px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  /* flex-wrap: wrap; */
+  background-color: #c4eed4;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.button-wrapper {
+  position: relative;
+  margin-bottom: 10px; /* Space between buttons */
+}
+
+.hover-img {
+  position: absolute;
+  left: 100%; /* Position the image to the right of the button */
+  top: 0;
+  width: 200px; /* Adjust as needed */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.preview-img {
+  max-width: "200px";
+  max-height: "200px";
+  margin-bottom: 20px; /* Space between preview image and style buttons */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-selected {
+  background-color: #0056b3;
+}
+
+.image-preview-wrapper {
+  position: relative; /* Or absolute if you want it relative to a positioned parent */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.image-preview {
+  max-width: 300px;
+  max-height: 300px;
+  border: 3px solid #fff; /* Optional: adds a border around the image */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow for better visibility */
+  border-radius: 10px; /* Optional: rounds the corners */
+  transition: all ease-in-out 0.1s;
+}
+
+.image-preview:hover {
+  transform: scale(1.02); /* 使图片稍微放大 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* 加深阴影效果 */
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* .title-name {
+  font-size: 3em;
+} */
+.Archi-icon {
+  height: 100px;
+  margin-right: 10px;
+}
