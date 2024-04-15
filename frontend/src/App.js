@@ -24,6 +24,14 @@ function App() {
     ancient: ancientImage,
   };
 
+  const removeImage = (style, index) => {
+    setImages((prevImages) => {
+      const newImages = { ...prevImages };
+      newImages[style].splice(index, 1); // 删除特定索引的图片
+      return newImages;
+    });
+  };
+
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     if (file && file.type.startsWith("image")) {
@@ -126,12 +134,19 @@ function App() {
           </h3>
           <div className="picture-panel">
             {urls.map((url, index) => (
-              <img
-                key={index}
-                src={url}
-                alt={`Generated ${style}`}
-                style={{ maxWidth: "400px", maxHeight: "400px" }}
-              />
+              <div key={index} className="image-container">
+                <img
+                  src={url}
+                  alt={`Generated ${style}`}
+                  className="generated-image"
+                />
+                <button
+                  className="delete-button"
+                  onClick={() => removeImage(style, index)}
+                >
+                  X
+                </button>
+              </div>
             ))}
           </div>
         </div>

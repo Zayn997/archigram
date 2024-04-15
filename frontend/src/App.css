@@ -161,3 +161,42 @@ img {
   height: 100px;
   margin-right: 10px;
 }
+
+.image-container {
+  position: relative;
+  display: inline-block; /* Or 'block' if you want each image on a new line */
+  margin-right: 10px;
+}
+
+.generated-image {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  display: none; /* 默认不显示删除按钮 */
+  opacity: 0.8; /* 适度的透明度 */
+  border-radius: 50%;
+  width: 25px;
+}
+
+.image-container:hover .delete-button {
+  display: block; /* 鼠标悬停时显示删除按钮 */
+}
+
+.delete-button:hover {
+  opacity: 1; /* 鼠标悬停在按钮上时更加明显 */
+}
+
+/* Optional: Add transition for a smoother effect */
+.delete-button {
+  transition: opacity 0.2s ease-in-out;
+}
